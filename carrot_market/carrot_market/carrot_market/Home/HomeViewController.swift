@@ -7,6 +7,9 @@
 
 import UIKit
 
+// 홈 뷰모델 만들기
+// 뷰모델은 리스트 가져오기
+
 class HomeViewController: UIViewController {
 
     override func viewDidLoad() {

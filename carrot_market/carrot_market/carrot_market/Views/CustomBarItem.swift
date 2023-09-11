@@ -33,7 +33,6 @@ final class CustomBarItem: UIButton {
         super.init(frame: .zero)
         setupStyle()
         updateConfig()
-        
                 
         self.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
     }
@@ -42,13 +41,11 @@ final class CustomBarItem: UIButton {
         self.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
         self.titleLabel?.textColor = .orange
         self.imageView?.tintColor = .orange
-        
     }
     
     private func updateConfig() {
         self.setTitle(customBarItemConfig.title, for: .normal)
         self.setImage(customBarItemConfig.image, for: .normal)
-        
     }
     
     @objc func buttonTapped() {

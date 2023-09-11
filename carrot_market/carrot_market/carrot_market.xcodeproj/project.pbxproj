@@ -26,6 +26,7 @@
 		9DC112AC2AAA2C9B0017979C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC112AB2AAA2C9B0017979C /* ChatViewController.swift */; };
 		9DC112AE2AAA2CFB0017979C /* MyNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC112AD2AAA2CFB0017979C /* MyNearViewController.swift */; };
 		9DC112B02AAA2E8E0017979C /* CustomBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC112AF2AAA2E8E0017979C /* CustomBarItem.swift */; };
+		9DF1B4472AAE1F670098F5E1 /* UIBarButtonItem+CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF1B4462AAE1F670098F5E1 /* UIBarButtonItem+CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		9DC112AB2AAA2C9B0017979C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		9DC112AD2AAA2CFB0017979C /* MyNearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNearViewController.swift; sourceTree = "<group>"; };
 		9DC112AF2AAA2E8E0017979C /* CustomBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBarItem.swift; sourceTree = "<group>"; };
+		9DF1B4462AAE1F670098F5E1 /* UIBarButtonItem+CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+CustomView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D3C2E992AAF272A00D18450 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9DC1129D2AAA20510017979C /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9D3C2E9A2AAF273700D18450 /* MyTown */ = {
+			isa = PBXGroup;
+			children = (
+				9DC112A72AAA2C8B0017979C /* MyTownViewController.swift */,
+				9DC112AD2AAA2CFB0017979C /* MyNearViewController.swift */,
+			);
+			path = MyTown;
+			sourceTree = "<group>";
+		};
+		9D3C2E9B2AAF274200D18450 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				9DC112AB2AAA2C9B0017979C /* ChatViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		9D3C2E9C2AAF274800D18450 /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				9DC112A92AAA2C940017979C /* MyProfileViewController.swift */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		9D3C2E9D2AAF275F00D18450 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9DC1129F2AAA20850017979C /* DetailViewController.swift */,
+				9DC112A52AAA21920017979C /* Detail.storyboard */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		9D3C2E9E2AAF277700D18450 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9DF1B4462AAE1F670098F5E1 /* UIBarButtonItem+CustomView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9D3C2E9F2AAF279400D18450 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9DC112A32AAA21250017979C /* MainTabBarController.swift */,
+				9DC112A12AAA21040017979C /* MainNavigationViewController.swift */,
+				9DC112842AAA19DC0017979C /* Main.storyboard */,
+				9DC112AF2AAA2E8E0017979C /* CustomBarItem.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9DC112722AAA19DC0017979C = {
 			isa = PBXGroup;
 			children = (
@@ -84,20 +147,16 @@
 			children = (
 				9DC1127E2AAA19DC0017979C /* AppDelegate.swift */,
 				9DC112802AAA19DC0017979C /* SceneDelegate.swift */,
-				9DC112842AAA19DC0017979C /* Main.storyboard */,
-				9DC112AD2AAA2CFB0017979C /* MyNearViewController.swift */,
-				9DC1129D2AAA20510017979C /* HomeViewController.swift */,
-				9DC112A12AAA21040017979C /* MainNavigationViewController.swift */,
-				9DC112A32AAA21250017979C /* MainTabBarController.swift */,
-				9DC112AF2AAA2E8E0017979C /* CustomBarItem.swift */,
-				9DC112A72AAA2C8B0017979C /* MyTownViewController.swift */,
-				9DC112A92AAA2C940017979C /* MyProfileViewController.swift */,
-				9DC112AB2AAA2C9B0017979C /* ChatViewController.swift */,
-				9DC112A52AAA21920017979C /* Detail.storyboard */,
-				9DC1129F2AAA20850017979C /* DetailViewController.swift */,
-				9DC112952AAA1B4B0017979C /* Network */,
-				9DC112922AAA1ABF0017979C /* Utils */,
+				9D3C2E9F2AAF279400D18450 /* Views */,
 				9DC1129A2AAA1FA40017979C /* Model */,
+				9D3C2E992AAF272A00D18450 /* Home */,
+				9D3C2E9A2AAF273700D18450 /* MyTown */,
+				9D3C2E9B2AAF274200D18450 /* Chat */,
+				9D3C2E9C2AAF274800D18450 /* MyProfile */,
+				9D3C2E9D2AAF275F00D18450 /* Detail */,
+				9DC112922AAA1ABF0017979C /* Utils */,
+				9DC112952AAA1B4B0017979C /* Network */,
+				9D3C2E9E2AAF277700D18450 /* Extensions */,
 				9DC112872AAA19DC0017979C /* Assets.xcassets */,
 				9DC112892AAA19DC0017979C /* LaunchScreen.storyboard */,
 				9DC1128C2AAA19DC0017979C /* Info.plist */,
@@ -206,6 +265,7 @@
 				9DC112972AAA1B5D0017979C /* NetworkService.swift in Sources */,
 				9DC112A42AAA21250017979C /* MainTabBarController.swift in Sources */,
 				9DC1127F2AAA19DC0017979C /* AppDelegate.swift in Sources */,
+				9DF1B4472AAE1F670098F5E1 /* UIBarButtonItem+CustomView.swift in Sources */,
 				9DC1129E2AAA20510017979C /* HomeViewController.swift in Sources */,
 				9DC112A22AAA21040017979C /* MainNavigationViewController.swift in Sources */,
 				9DC112AA2AAA2C940017979C /* MyProfileViewController.swift in Sources */,
