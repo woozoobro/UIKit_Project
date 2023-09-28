@@ -66,7 +66,7 @@ class MainTabBarController: UITabBarController {
                 navigationItem.rightBarButtonItem = settingItem
                 navigationItem.backButtonDisplayMode = .minimal
             default:
-                let titleConfig =  CustomBarItemConfiguration(title: nil, image: UIImage(systemName: "gear"), handler: { print("Feed Tapped") })
+                let titleConfig =  CustomBarItemConfiguration(title: "정자동", handler: { print("Feed Tapped") })
                 let titleItem = UIBarButtonItem.generate(with: titleConfig)
                 
                 navigationItem.leftBarButtonItem = titleItem

@@ -20,7 +20,7 @@
                         <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
                     </tabBar>
                     <connections>
-                        <segue destination="HMd-hY-iXn" kind="relationship" relationship="viewControllers" id="qEf-dF-I5J"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="qEf-dF-I5J"/>
                         <segue destination="CdE-Uc-XGk" kind="relationship" relationship="viewControllers" id="90O-Sz-RHi"/>
                         <segue destination="zg2-bl-iBZ" kind="relationship" relationship="viewControllers" id="aZS-UC-gWd"/>
                         <segue destination="aUJ-5M-HcG" kind="relationship" relationship="viewControllers" id="LSa-9L-c47"/>
@@ -52,6 +52,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewQ-Na-W8K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1488" y="-35"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="carrot_market" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aN-aE-bFN">
+                                <rect key="frame" x="175" y="416" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gi8-yv-1Qe">
+                                <rect key="frame" x="159" y="512" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="ctaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jV0-8a-bZd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="홈" image="homekit" catalog="system" id="PJd-10-6vn"/>
+                    <navigationItem key="navigationItem" id="2DT-kW-Pul"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1456" y="699"/>
         </scene>
         <!--동네 생활-->
         <scene sceneID="uI6-Q6-Nhl">
@@ -117,19 +153,10 @@
             </objects>
             <point key="canvasLocation" x="1306" y="699"/>
         </scene>
-        <!--HomeViewController-->
-        <scene sceneID="1FV-4f-cIG">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="HomeViewController" storyboardName="Home" referencedIdentifier="HomeViewController" id="HMd-hY-iXn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="HIW-5U-p6N"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5S2-Kk-lYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1456" y="699"/>
-        </scene>
     </scenes>
     <resources>
         <image name="doc" catalog="system" width="115" height="128"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="mappin.and.ellipse" catalog="system" width="117" height="128"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="rectangle.3.group.bubble.left.fill" catalog="system" width="128" height="110"/>

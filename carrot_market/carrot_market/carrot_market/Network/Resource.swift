@@ -22,7 +22,7 @@ struct Resource<T: Decodable> {
         
         var request = URLRequest(url: urlComponents.url!)
         header.forEach { (key: String, value: String) in
-            request.addValue(value, forHTTPHeaderField: key)
+            request.addValue(value, forHTTPHeaderField : key)
         }
         
         return request
